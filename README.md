@@ -10,6 +10,8 @@ Requirements
   * Django
   * Pyaml
 
+You can use [this docker config](https://github.com/csanquer/django-docker) to run the application
+
 Install
 -----
 
