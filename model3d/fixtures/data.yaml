@@ -1,0 +1,58 @@
+---
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$30000$cadPxZ0xTTtK$fS3zBd8Nhshyr4NTiKlgHN64/1hGfljR0IgTqJNKNnw=
+    last_login: 2016-09-05 12:15:48.122928+00:00
+    is_superuser: true
+    username: admin
+    first_name: ''
+    last_name: ''
+    email: admin@example.com
+    is_staff: true
+    is_active: true
+    date_joined: 2016-09-05 08:00:55.553201+00:00
+    groups: []
+    user_permissions: []
+- model: auth.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$30000$yzxj4Vm7m4v1$q6qxsLiv6tXFfI4ry1xyka8nwdOaY4PLRUAS5xdoIoQ=
+    last_login: null
+    is_superuser: false
+    username: user1
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2016-09-05 12:16:26.093527+00:00
+    groups: []
+    user_permissions: []
+
+- model: model3d.model3d
+  pk: 1
+  fields: {name: modele1, desc: modele1, owner: 2, created_at: !!timestamp '2016-09-05
+      12:17:19.986576+00:00', views: 999}
+- model: model3d.model3d
+  pk: 2
+  fields: {name: modele2, desc: modele2, owner: 2, created_at: !!timestamp '2016-09-05
+      12:17:37.262131+00:00', views: 0}
+- model: badges.badge
+  pk: 1
+  fields:
+    name: star
+    desc: "le mod\xE8le d'un utilisateur a \xE9t\xE9 vu plus de 1000 fois"
+    users: []
+- model: badges.badge
+  pk: 2
+  fields:
+    name: collector
+    desc: "un utilisateur a upload\xE9 plus de 5 mod\xE8les"
+    users: []
+- model: badges.badge
+  pk: 3
+  fields:
+    name: pionneer
+    desc: l'utilisateur est inscrit depuis plus de 1 an
+    users: []
