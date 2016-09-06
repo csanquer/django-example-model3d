@@ -23,7 +23,7 @@ def add_badge(sender, instance, created, **kwargs):
         starBadge.save()
 
     ownerModelNb = sender.objects.filter(owner=instance.owner).count()
-    if ownerModelNb >= 3 :
+    if ownerModelNb >= 5 :
         collectorBadge = Badge.objects.get(name='collector')
         collectorBadge.users.add(instance.owner)
         collectorBadge.save()
